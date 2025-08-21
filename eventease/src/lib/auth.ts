@@ -1,5 +1,5 @@
 import { betterAuth } from "better-auth"
-import { prismaAdapter } from "better-auth/adapters/prisma";
+import { prismaAdapter } from "better-auth/adapters/prisma"
 import { prisma } from "./prisma"
 
 export const auth = betterAuth({
@@ -14,12 +14,9 @@ export const auth = betterAuth({
     expiresIn: 60 * 60 * 24 * 7, // 7 days
     updateAge: 60 * 60 * 24, // 1 day
   },
-  advanced: {
-    generateId: () => {
-      // Generate custom ID
-      return crypto.randomUUID()
-    }
-  },
+  trustedOrigins: ["http://localhost:3000"],
+  baseURL: process.env.BETTER_AUTH_URL || "http://localhost:3000",
+  secret: process.env.BETTER_AUTH_SECRET || "your-secret-key",
 })
 
 export type Session = typeof auth.$Infer.Session
