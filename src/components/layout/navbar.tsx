@@ -46,12 +46,12 @@ export function Navbar() {
             >
               Create Event
             </Link>
-            <Link
+            {/* <Link
               href="/explore"
               className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200"
             >
               Explore
-            </Link>
+            </Link> */}
           </div>
 
           {/* User Menu */}
@@ -158,14 +158,14 @@ export function Navbar() {
                     </Link>
                   </>
                 )}
-                <Link
+                {/* <Link
                   href="/explore"
                   className="flex items-center space-x-2 px-3 py-2 rounded-lg text-gray-700 hover:bg-blue-50 transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   <Calendar className="w-4 h-4" />
                   <span>Explore Events</span>
-                </Link>
+                </Link> */}
                 
                 {user ? (
                   <div className="pt-3 border-t border-white/20">

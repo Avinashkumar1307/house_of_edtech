@@ -72,12 +72,12 @@ export function Footer() {
               >
                 Create Event
               </Link>
-              <Link
+              {/* <Link
                 href="/explore"
                 className="block text-gray-600 hover:text-blue-600 transition-colors duration-200"
               >
                 Explore Events
-              </Link>
+              </Link> */}
               <Link
                 href="/help"
                 className="block text-gray-600 hover:text-blue-600 transition-colors duration-200"
@@ -129,7 +129,7 @@ export function Footer() {
             >
               <Heart className="w-4 h-4 text-red-500 fill-current" />
             </motion.div>
-            <span>by <strong className="gradient-text">Your Name</strong></span>
+            <span>by <strong className="gradient-text">Avinash kumar</strong></span>
           </div>
           <div className="text-gray-600 text-sm">
             © {new Date().getFullYear()} EventEase. All rights reserved.

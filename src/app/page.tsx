@@ -94,17 +94,17 @@ export default function HomePage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
             >
-              <Link href="/register">
+              <Link href="/register" className='flex'>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="btn-primary text-lg px-8 py-4"
+                  className="btn-primary text-lg px-8 py-4 flex items-center"
                 >
                   Start Creating Events
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </motion.button>
               </Link>
-              <Link href="/explore">
+              {/* <Link href="/explore">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -112,7 +112,7 @@ export default function HomePage() {
                 >
                   Explore Events
                 </motion.button>
-              </Link>
+              </Link> */}
             </motion.div>
 
             {/* Hero Image/Demo */}
